@@ -1,3 +1,100 @@
-html{
-    background-color: aqua;
+html {
+    background-color: black;
+}
+
+.navbar {
+    background: black;
+    font-family: calibri;
+    padding: 0 2em; /* Padding on both sides for spacing */
+    padding-top: 2em;
+}
+.navdiv a:hover{
+    color: green;
+    cursor: pointer;
+}
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the flex items horizontally */
+    position: relative; /* Create a containing block for absolute positioning */
+}
+
+.navdiv > div {
+    position: absolute; /* Position the logo absolutely */
+    left: 0; /* Align the logo to the left */
+}
+
+.navdiv ul {
+    display: flex;
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    justify-content: center; /* Center the list items */
+    flex: 1; /* Allow the ul to take up the remaining space */
+}
+
+.navdiv li {
+    margin-right: 3em; /* Space between list items */
+}
+
+.navdiv li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.list-item {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.logo {
+    width: 9em;
+}
+
+.logo-link {
+    display: inline-block;
+}
+.main-wrapper{
+    width: 100%;
+    margin: 0em auto;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1em; /* Adjust padding for smaller screens */
+    }
+
+    .navdiv {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .navdiv > div {
+        position: static; /* Reset position for mobile */
+        margin-bottom: 1em; /* Space between logo and nav items */
+    }
+
+    .navdiv ul {
+        flex-direction: column; /* Stack list items vertically */
+        width: 100%; /* Full width for better stacking */
+        align-items: center; /* Center list items */
+    }
+
+    .navdiv li {
+        margin-right: 0; /* Remove right margin for vertical layout */
+        margin-bottom: 1em; /* Space between list items */
+    }
+
+    .navdiv li:last-child {
+        margin-bottom: 0; /* Remove bottom margin for the last item */
+    }
+
+    .list-item {
+        font-size: 1.2em; /* Smaller font size for mobile */
+    }
 }
