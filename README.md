@@ -1,2 +1,2 @@
 # wastewise
-were reef and randy and we love men
+were reef and randy
