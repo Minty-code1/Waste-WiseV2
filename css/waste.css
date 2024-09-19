@@ -63,7 +63,7 @@ a {
 }
 
 .navdiv a:hover{
-    color: green;
+    color: #3F9C0C;
    cursor: grabbing;
 
 }
@@ -79,8 +79,8 @@ grid-template-areas:
 "MainBin MainBin MainBin"
 "MainBin MainBin MainBin"
 "Explore-page Explore-page Explore-page"
-"info-box1 info-box2 info-box3"
-"info-box1 info-box2 info-box3"
+"full-box1 full-box2 full-box3"
+"full-box1 full-box2 full-box3"
 ;
 }
 
@@ -132,20 +132,22 @@ grid-area:MainBin;
 }
 
 .page-explore{
-    color: green;
+    color: #3F9C0C;
     font-size: 4.2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
 
+.full-box1{
+grid-area: full-box1;
+padding-bottom: 4em;
+}
+
 .info-box1{
     position: relative;
     padding-top: 7em;
-    grid-area: info-box1;
     display: flex;
     justify-content: center;
-
-    
 }
 
 .info-img1{
@@ -153,13 +155,53 @@ width: 90%;
 padding-left: 5%;
 }
 
+.heading-box1-div{
+    padding-left: 5%;
+    padding-top: .5em;
+}
+
+.heading-box1{
+    color: #1e1e1e;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box1-div{
+    padding-left: 5%;
+    padding-top: 1em;
+}
+
+.content-box1{
+    color: #3F9C0C;
+    opacity: 73%;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.link-box1-div{
+    padding-left: 5%;
+    padding-top: .5em; 
+}
+
+.link-box1{
+color: #2e54ff;
+font-size: 1.2em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+text-decoration: underline;
+}
+
+.full-box2{
+    grid-area: full-box2;
+    }
+
 .info-box2{
     position: relative;
     padding-top: 7em;
-    grid-area: info-box2;
     display: flex;
     justify-content: center;
-
 }
 
 .info-img2{
@@ -167,12 +209,51 @@ width: 90%;
 padding-left: 5%;
 }
 
+.heading-box2-div{
+    padding-left: 5%;
+    padding-top: .5em;
+}
 
+.heading-box2{
+    color: #1e1e1e;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box2-div{
+    padding-left: 5%;
+    padding-top: 1em;
+}
+
+.content-box2{
+    color: #3F9C0C;
+    opacity: 73%;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.link-box2-div{
+    padding-left: 5%;
+    padding-top: .5em; 
+}
+
+.link-box2{
+color: #2e54ff;
+font-size: 1.2em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+text-decoration: underline;
+}
+
+.full-box3{
+    grid-area: full-box3;
+    }
 
 .info-box3{
     position: relative;
     padding-top: 7em;
-    grid-area: info-box3;
     display: flex;
     justify-content: center;
 }
@@ -180,6 +261,44 @@ padding-left: 5%;
 .info-img3{
 width: 90%;
 padding-left: 5%;
+}
+
+.heading-box3-div{
+    padding-left: 5%;
+    padding-top: .5em;
+}
+
+.heading-box3{
+    color: #1e1e1e;
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content-box3-div{
+    padding-left: 5%;
+    padding-top: 1em;
+}
+
+.content-box3{
+    color: #3F9C0C;
+    opacity: 73%;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.link-box3-div{
+    padding-left: 5%;
+    padding-top: .5em; 
+}
+
+.link-box3{
+color: #2e54ff;
+font-size: 1.2em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 700;
+text-decoration: underline;
 }
 
 /* CONTACT PAGE CSS */
