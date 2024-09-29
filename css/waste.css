@@ -73,11 +73,15 @@ width: 100%;
 margin: 0;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 3fr 3fr 3fr 1fr;
+grid-template-rows: 5fr 5fr 3fr 1fr 1fr 1fr 1fr;
 grid-template-areas: 
 "MainBin MainBin MainBin"
 "MainBin MainBin MainBin"
 "MainBin MainBin MainBin"
+"MainBin MainBin MainBin"
+"MainBin MainBin MainBin"
+"Explore-page Explore-page Explore-page"
+"Explore-page Explore-page Explore-page"
 "Explore-page Explore-page Explore-page"
 "Explore-page Explore-page Explore-page"
 "Explore-page Explore-page Explore-page"
@@ -85,6 +89,7 @@ grid-template-areas:
 "full-box1 full-box2 full-box3"
 "full-box1 full-box2 full-box3"
 "Make-Dif Make-Dif Make-Dif"
+"Waste-Counter Waste-Counter Waste-Counter"
 ;
 }
 
@@ -340,6 +345,18 @@ text-decoration: underline;
 
 .grn-text{
     color: #3F9C0C;
+}
+
+.waste-counter-div{
+    grid-area: Waste-Counter;
+}
+
+.waste-counter-img-div{
+
+}
+
+.counter-img{
+    width: 100%;
 }
 
 /* CONTACT PAGE CSS */
