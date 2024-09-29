@@ -73,14 +73,18 @@ width: 100%;
 margin: 0;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 3fr 1fr 2fr;
+grid-template-rows: 3fr 3fr 3fr 1fr;
 grid-template-areas: 
 "MainBin MainBin MainBin"
 "MainBin MainBin MainBin"
 "MainBin MainBin MainBin"
 "Explore-page Explore-page Explore-page"
+"Explore-page Explore-page Explore-page"
+"Explore-page Explore-page Explore-page"
 "full-box1 full-box2 full-box3"
 "full-box1 full-box2 full-box3"
+"full-box1 full-box2 full-box3"
+"Make-Dif Make-Dif Make-Dif"
 ;
 }
 
@@ -128,12 +132,12 @@ grid-area:MainBin;
     position: relative;
     display: flex;
     justify-content: center;
-    top: 4em;
+    top: 4.2em;
 }
 
 .page-explore{
     color: #3F9C0C;
-    font-size: 3em;
+    font-size: 3.6em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
@@ -299,6 +303,43 @@ font-size: 1.1em;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-weight: 700;
 text-decoration: underline;
+}
+
+.make-difference-div{
+    grid-area: Make-Dif;
+}
+
+.difference-heading-div{
+    grid-area: Explore-page;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 1em;
+}
+
+.difference-heading{
+    color: #000000;
+    font-size: 2.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold; 
+}
+
+.dif-content-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    text-align: center;
+}
+
+.dif-content{
+    color: #5c5c5c;
+    font-size: 1.4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+.grn-text{
+    color: #3F9C0C;
 }
 
 /* CONTACT PAGE CSS */
