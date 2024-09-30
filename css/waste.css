@@ -82,6 +82,8 @@ grid-template-areas:
 "WasteCounter WasteCounter WasteCounter"
 "Recycling Recycling Recycling"
 "ContactBody ContactBody ContactBody"
+
+
 ;
 }
 
@@ -418,6 +420,62 @@ width: 90%;
     font-weight: 700;
     padding-bottom: 4em;
 }
+
+footer {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-template-areas: 
+        "Footer1 Footer2 Footer3";
+    background: url('../imageshome/bins_lines.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: 1;
+    padding: 2em 0; /* Added padding for spacing */
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+.footer-box {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 2em; /* Padding for footer content */
+    text-align: center; /* Center text in columns */
+}
+
+.footer-waste-wise {
+    grid-area: Footer1;
+}
+
+.footer-reference {
+    grid-area: Footer2;
+}
+
+.footer-contact {
+    grid-area: Footer3;
+}
+
+.footer-box h2, .footer-box p {
+    margin: 0.5em 0; /* Spacing for headings and paragraphs */
+}
+
+.footer-box a {
+    color: #2e54ff; /* Link color */
+    text-decoration: underline; /* Underline for links */
+}
+
+
 
 /* CONTACT PAGE CSS */
 .contactbody{

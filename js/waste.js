@@ -1,4 +1,4 @@
-const target = 67000;
+const target = 67374;
 const duration = 5000;  // Duration in milliseconds (5 seconds)
 const fps = 60;         // Number of updates per second (60 frames per second)
 const totalFrames = fps * (duration / 1000); // Total number of frames for 5 seconds
