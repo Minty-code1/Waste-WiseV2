@@ -78,78 +78,78 @@ a {
 
 }
 
-/*CONTENT*/
+/*CONTENT CSS*/
 
-.wrapper-kai{
+.wrapper{
     width: 100%;
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "Kaipara-img Kaipara-img" 
-    "Waste-To-Energy Waste-To-Energy"
-    "Kai-Pollution Kai-Pollution-img"
-    "Kai-Ref Kai-Ref"
+    "NZ-img NZ-img"
+    "Amount-Waste Amount-Waste"
+    "Source-content Source-Img"
+    "NZ-Ref NZ-Ref"
     ;
 }
 
-.wharf-div{
-    grid-area: Kaipara-img;
+.nz-img-div{
+    grid-area: NZ-img;
 }
 
-.wharf-img{
+.nz-img{
     width: 100%;
 }
 
-.kaipara-box{
+.nz-sec1{
     display: grid;
-    grid-column: Kaipara-img-start/Kaipara-img-end;
-    grid-row: Kaipara-img-start/Kaipara-img-end;
+    grid-column: NZ-img-start/NZ-img-end;
+    grid-row: NZ-img-start/NZ-img-end;
 }
 
-.kai-main-heading-div{
+.nz-header-div{
     position: absolute;
     padding: 2em 2.5%;
 }
 
-.kai-main-heading{
+.nz-header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 4em;
-    color: white;
+    color: white; 
 }
 
 .grn-text{
-color: #3F9C0C;
+    color: #3F9C0C;
 }
 
-.kai-main-content-div{
+.nz_content-sec1-div{
     position: absolute;
-    padding: 5.5em 2.5%;
+    padding: 7em 2.5%;
 }
 
-.kai-main-content{
+.nz_content-sec1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 2em;
-    color: white;
+    color: white; 
 }
 
-.waste-to-energy{
-    grid-area: Waste-To-Energy;
+.amount-rubbish{
+    grid-area: Amount-Waste;
     width: 95%;
     padding-left: 2.5%;
 }
 
-.energy-header{
+.amount-header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-size: 2.6em;
     color: rgb(0, 0, 0);
-    padding-top: 1em;
+    padding-top: 1em;  
 }
 
-.energy-content{
+.amount-content{
     color: #5c5c5c;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -158,14 +158,13 @@ color: #3F9C0C;
     padding-bottom: 2em;
 }
 
-.kai-pollution{
-    grid-area: Kai-Pollution;
+.source-rubbish{
+    grid-area: Source-content;
     width: 100%;
-    background-color: #3F9C0C;
-
+    background-color: #707070;
 }
 
-.pollution-heading{
+.source-rubbish-header{
     font-weight: 700;
     font-size: 2.6em;
     color: white;
@@ -174,11 +173,7 @@ color: #3F9C0C;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.blk-text{
-    color: black;
-}
-
-.pollution-content{
+.source-content{
     color: white;
     width: 90%;
     padding-left: 5%;
@@ -188,21 +183,21 @@ color: #3F9C0C;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.pollution-img-div{
-    grid-area: Kai-Pollution-img;
+.source-img-div{
+    grid-area: Source-Img;
     width: 100%;
-    display: grid;
+    display: grid;     
 }
 
-.pollution-img{
-width: 100%;
+.source-img{
+    width: 100%;
 }
 
-.kai-references{
-    grid-area: Kai-Ref;
+.nz-ref{
+    grid-area: NZ-Ref;
 }
 
-.kai-ref-heading{
+.header-ref{
     text-align: center;
     font-size: 2.6em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -212,21 +207,21 @@ width: 100%;
 
 .ref-content{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   list-style: none; 
-   font-size: 1.4em;
-   font-weight: normal;
-   width: 90%;
-   text-align: center;
-   padding-left: 5%;
-   padding-bottom: 2em;
+    list-style: none; 
+    font-size: 1.4em;
+    font-weight: normal;
+    width: 90%;
+    text-align: center;
+    padding-left: 5%;
+    padding-bottom: 2em;
 }
 
-.kai-references a{
+.nz-ref a{
     color: #2e54ff; 
     text-decoration: underline;
 }
 
-/*Footer CSS*/
+/*FOOTER CSS*/
 
 footer {
     position: relative;
