@@ -448,6 +448,8 @@ width: 90%;
     padding-bottom: 4em;
 }
 
+/*Footer CSS*/
+
 footer {
     position: relative;
     width: 100%;
@@ -729,63 +731,3 @@ input[type="submit"]:hover {
         font-size: 1.2em; /* Adjusted font size for smaller screens */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
