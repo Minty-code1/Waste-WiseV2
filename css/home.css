@@ -361,7 +361,7 @@ text-decoration: underline;
 
 .dif-content{
     color: #5c5c5c;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     padding-bottom: 4em;
@@ -406,7 +406,7 @@ text-decoration: underline;
 }
 
 #counter {
-    font-size: 7em;  
+    font-size: 6em;  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
 }
@@ -442,7 +442,7 @@ width: 90%;
 
 .recycle-content{
     color: #5c5c5c;
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     padding-bottom: 4em;
