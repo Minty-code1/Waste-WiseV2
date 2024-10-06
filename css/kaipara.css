@@ -1,0 +1,98 @@
+html {
+    background-color: #EBEBEB;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/*NAV CSS*/
+.navbar {
+    background: rgb(0, 0, 0);
+    font-family: calibri;
+    padding: 0 2em; /* Padding on both sides for spacing */
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+    
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the flex items horizontally */
+    position: relative; /* Create a containing block for absolute positioning */
+}
+
+.navdiv > div {
+    position: absolute; /* Position the logo absolutely */
+    left: 0; /* Align the logo to the left */
+}
+
+.navdiv ul {
+    display: flex;
+    list-style: none;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    justify-content: right; /* Center the list items */
+    flex: 1; /* Allow the ul to take up the remaining space */
+}
+
+.navdiv li {
+    margin-right: 3em; /* Space between list items */
+}
+
+.navdiv li:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.list-item {
+    font-size: 1.6em;
+    font-weight: bold;
+    padding: .7em;
+}
+
+.logo {
+    width: 9em;
+}
+
+.logo-link {
+    display: inline-block;
+}
+
+.navdiv a:hover{
+    color: #3F9C0C;
+   cursor: grabbing;
+
+}
+
+/*CONTENT*/
+
+.wrapper{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+    "Kaipara-img Kaipara-img"    
+    ;
+}
+
+.kaipara-box{
+    grid-area: Kaipara-img;
+}
+
+.wharf-img{
+    width: 100%;
+}
+
+.kai-main-heading-div{
+    display: grid;
+    grid-column: Kaipara-img-start/Kaipara-img-end;
+    grid-row: Kaipara-img-start/Kaipara-img-end;
+}
