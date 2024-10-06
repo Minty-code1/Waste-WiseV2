@@ -72,18 +72,18 @@ a {
 
 /*CONTENT*/
 
-.wrapper{
+.wrapper-kai{
     width: 100%;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-columns: repeat(2, auto);
     grid-template-areas: 
-    "Kaipara-img Kaipara-img"    
+    "Kaipara-img Kaipara-img" 
+    "Waste-To-Energy Waste-To-Energy"
     ;
 }
 
-.kaipara-box{
+.wharf-div{
     grid-area: Kaipara-img;
 }
 
@@ -91,8 +91,38 @@ a {
     width: 100%;
 }
 
-.kai-main-heading-div{
+.kaipara-box{
     display: grid;
     grid-column: Kaipara-img-start/Kaipara-img-end;
     grid-row: Kaipara-img-start/Kaipara-img-end;
 }
+
+.kai-main-heading-div{
+    position: absolute;
+    padding: 2em 4em;
+}
+
+.kai-main-heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: white;
+}
+
+.grn-text{
+color: #3F9C0C;
+}
+
+.kai-main-content-div{
+    position: absolute;
+    padding: 5.5em 4em;
+}
+
+.kai-main-content{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: white;
+}
+
+
