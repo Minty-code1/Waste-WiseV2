@@ -106,7 +106,7 @@ grid-area:MainBin;
 
 .learn-box {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     color: white;
     grid-row: MainBin-start / MainBin-end;
     grid-column: MainBin-start / MainBin-end;
