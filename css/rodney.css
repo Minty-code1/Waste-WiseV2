@@ -92,6 +92,7 @@ a {
         "Sec-3 Sec-3-Img"
         "Rc-Ref Rc-Ref"
         "Gallery Gallery"
+        "Gallery1 Gallery2"
         ;       
     width: 100%;
     margin: 0;
@@ -221,6 +222,7 @@ a {
 
 .gallery{
     grid-area: Gallery;
+    width: 100%;
 }
 
 .gallery_header{
@@ -233,4 +235,38 @@ a {
 .gal_line1{
     border: .15em solid #707070;
     width: 95%;
+}
+
+.gal_content1{
+    grid-area: Gallery1;
+    padding-left: 5%;
+    padding-top: 1em;
+}   
+
+.rc_img1{
+    width: 95%;
+    padding-left: 4.5%;
+    padding-bottom: .5%;
+}
+
+.rc_img3{
+    width: 95%;
+    padding-left: 4.5%;
+}
+
+.gal_content2{
+    grid-area: Gallery2;
+    padding-right: 5%;
+    padding-top: 1em;
+}
+
+.rc_img2{
+    width: 95%;
+    padding-left: .5%;
+    padding-bottom: .5%;
+}
+
+.rc_img4{
+    width: 95%;
+    padding-left: .5%;
 }
