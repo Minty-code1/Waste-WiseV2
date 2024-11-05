@@ -147,18 +147,6 @@ grid-area:MainBin;
     background-color: #2d700a; /* Button hover effect */
 }
 
-.background-learn{
-    position: absolute;
-    background-color: black;
-    opacity: 40%;
-    display: grid;
-    grid-row: MainBin-start / MainBin-end;
-    grid-column: MainBin-start / MainBin-end;
-    width: 100%;
-    height: 93.1%;
-    padding-bottom: .4em;
-}
-
 .explore-box{
     grid-area: Explore-page;
     position: relative;
@@ -723,20 +711,250 @@ input[type="submit"]:hover {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .container {
+    /* Adjust navbar */
+    .navbar {
+        padding: 1em;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navdiv {
+        flex-direction: column;
+        padding: 1em 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-list1,
+    .nav-list2 {
+        padding: 0;
+        justify-content: center;
         flex-direction: column;
     }
-    .contact-info, .form-container {
+
+    .navdiv li {
+        margin: 0.5em 0;
+    }
+
+    /* Main Content */
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "MainBin"
+            "Explore-page"
+            "full-box1"
+            "full-box2"
+            "full-box3"
+            "Make-Dif"
+            "WasteCounter"
+            "Recycling"
+            "ContactBody";
+    }
+
+    /* Main bin image */
+    .main-img-div {
+        grid-area: MainBin;
+        text-align: center; /* Centering main image */
+    }
+
+    .learn-waste{
+        font-size: 2em;
+    }
+
+    .learn-button{
+        font-size: .9em;
+    }
+
+    /* Explore page */
+    .explore-box {
+        top: 0;
+        padding-top: 1em;
+        text-align: center; /* Centering explore box */
+    }
+
+    .page-explore {
+        padding-top: 1em;
+        font-size: 2em; /* Reduced font size */
+    }
+
+   /* Full Boxes */
+.full-box1{
+    padding: 0em 0;
+    width: 80%;
+    text-align: center; /* Centering content in boxes */
+}
+
+
+.full-box2 {
+    padding: 0em 0;
+    width: 92.5%;
+    text-align: center; /* Centering content in boxes */
+  
+}
+
+    .full-box3 {
+        padding: 1em 0;
         width: 100%;
-        height: 50%;
+        text-align: center; /* Centering content in boxes */
     }
+
+    .info-img1,
+    .info-img2,
+    .info-img3 {
+        width: 90%;
+        display: block;
+        margin: 0 auto; /* Centering images */
+    }
+
+    /* Headers and content */
+    .heading-box1,
+    .heading-box2,
+    .heading-box3 {
+        font-size: 1.5em; /* Reduced font size */
+        text-align: center; /* Centering headers */
+    }
+
+    .content-box1,
+    .content-box2,
+    .content-box3 {
+        font-size: 0.8em; /* Reduced font size */
+        text-align: center; /* Centering content */
+        opacity: 85%;
+    }
+
+    /* Make a Difference section */
+    .make-difference-div {
+        padding: 2em 0;
+        text-align: center; /* Centering difference section */
+    }
+
+    .difference-heading {
+        padding-bottom: 1em;
+        font-size: 1.6em; /* Reduced font size */
+        text-align: center; /* Centering heading */
+    }
+
+    .dif-content{
+        font-size: 1em;
+    }
+
+    .dif-content-div {
+        width: 90%;
+        padding: 0 1em;
+        text-align: center; /* Centering content div */
+    }
+
+    /* Waste Counter */
+    .waste-counter-img-div {
+        position: relative;
+        text-align: center; /* Centering counter image */
+    }
+
+    .counter-main {
+        font-size: .4em; /* Adjusted font size for counter text */
+        text-align: center; /* Centering counter text */
+    }
+
+    /* Recycle Section */
+    .recycle-heading {
+        font-size: 1.8em; /* Reduced font size */
+        text-align: center; /* Centering recycle heading */
+    }
+
+    .recycle-content {
+        font-size: 1em; /* Adjusted font size */
+        text-align: center; /* Centering recycle content */
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the footer content */
+        text-align: center; /* Center text alignment in footer */
+    }
+
+    .footer-box {
+        text-align: center; /* Centering footer box content */
+    }
+
+    .ftr-waste-content{
+    text-align: center;
+    }
+
+    .line-ftr,
+    .line-ftr2 {
+        display: none;
+    }
+
+    .ftr-contact-content{
+        font-size: 1.2em;
+        text-align: center;
+        width: 90%;
+    }
+
+    .ftr-email-btm-div{
+        display: none;
+    }
+
+    .btm-logo{
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       text-align: center;
+    }
+
+    .ftr-copyright-logo{
+        display: none;
+    }
+
+    /* Adjust gaubin3 image */
+    .gaubin3 {
+        height: 250px; /* Increase height */
+        object-fit: cover; /* Ensure image is cropped correctly */
+        width: auto; /* Maintain aspect ratio */
+    }
+
+    /* Contact Page - Keep existing styles */
+    .container {
+        flex-direction: column;
+        text-align: center; /* Centering contact page content */
+    }
+
+    .contact-info,
+    .form-container {
+        width: 100%;
+        height: auto;
+        padding: 2em;
+        text-align: center; /* Centering contact info and form */
+    }
+
     h1 {
-        font-size: 2em; /* Adjusted font size for smaller screens */
+        font-size: 1.8em; /* Reduced font size */
     }
-    h2, p {
-        font-size: 1.2em; /* Adjusted font size for smaller screens */
+
+    h2,
+    p {
+        font-size: 1em; /* Adjusted font size */
     }
+
     .email {
-        font-size: 1.2em; /* Adjusted font size for smaller screens */
+        font-size: 0.9em; /* Adjusted font size */
+    }
+
+    label {
+        font-size: 1em; /* Adjusted font size */
+    }
+
+    input,
+    textarea {
+        font-size: 0.9em; /* Adjusted font size */
+    }
+
+    input[type="submit"] {
+        font-size: 0.9em; /* Adjusted font size */
     }
 }
+
