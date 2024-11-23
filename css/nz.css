@@ -221,6 +221,10 @@ a {
     text-decoration: underline;
 }
 
+.pdf-mobile{
+    display: none;
+}
+
 /*FOOTER CSS*/
 
 footer {
@@ -410,9 +414,7 @@ footer::before {
     ;
 }
 
-   .nz-img{
-       height: auto;
-   }
+   
 
    .nz-header{
        font-size: 2.5em; /* Adjust font size for headings */
@@ -429,24 +431,24 @@ footer::before {
        text-align: center;
    }
    
-   .amount-header-div{
-
-   }
+  
 
    .amount-content{
        text-align: center;
+       
    }
 
-   .amount-content-div{
-    
-   }
+
 
    .source-rubbish-header-div{
    
    }
 
+   .source-img{
+    display: none;
+   }
+
    .source-rubbish{
-    
     padding-bottom: 1em;
    }
 
@@ -455,11 +457,14 @@ footer::before {
    }
 
    .nz-ref{
-    
    }
 
-   .pdf{
-    
+   .ftr1-pdf{
+    display: none;
+   }
+
+   .pdf-mobile{
+    display: contents;
    }
 
    /* Footer */
