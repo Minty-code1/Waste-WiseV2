@@ -370,3 +370,131 @@ footer::before {
     font-weight: 500;
     
 }
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Adjust navbar */
+    .navbar {
+        padding: 1em;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .navdiv {
+        flex-direction: column;
+        padding: 1em 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-list1,
+    .nav-list2 {
+        padding: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .navdiv li {
+        margin: 0.5em 0;
+    }
+
+    .wrapper-kai{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Kaipara-img" 
+        "Waste-To-Energy"
+        "Kai-Pollution"
+        "Kai-Ref"
+        ;
+    }
+
+    /* Image adjustments */
+    .wharf-img, .pollution-img {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .kai-main-heading{
+        font-size: 2.5em; /* Adjust font size for headings */
+        text-align: center;
+        padding-left: 2.5em;
+    }
+
+    .kai-main-content-div{
+        display: none;
+    }
+
+    .pollution-heading-div{
+        width: 95%;
+    }
+
+    .pollution-content-div{
+        text-align: center;
+        padding-left: 2.5%;
+    }
+    
+
+    /* Box and text adjustments */
+    .energy-header, .pollution-heading {
+        font-size: 2em; /* Adjust font size for headings */
+        text-align: center;
+    }
+
+    .kai-main-content, .energy-content, .pollution-content {
+        font-size: 1em; /* Smaller font for better readability */
+        padding: 10px; /* Add padding */
+        align-content: center;
+    }
+
+   /* Footer */
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the footer content */
+    text-align: center; /* Center text alignment in footer */
+}
+
+.footer-box {
+    text-align: center; /* Centering footer box content */
+}
+
+.ftr-waste-content{
+text-align: center;
+}
+
+.line-ftr,
+.line-ftr2 {
+    display: none;
+}
+
+.ftr-contact-content{
+    font-size: 1.2em;
+    text-align: center;
+    width: 90%;
+}
+
+.ftr-email-btm-div{
+    display: none;
+}
+
+.btm-logo{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+}
+
+.ftr-copyright-logo{
+    display: none;
+}
+
+    /* Hide unnecessary elements on small screens */
+    .pollution-img-div {
+        display: none; /* Example of hiding an element */
+    }
+}

@@ -364,3 +364,153 @@ footer::before {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;   
 }
+
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    /* Adjust navbar */
+    .navbar {
+       padding: 1em;
+   }
+
+   .logo{
+       display: none;
+   }
+
+   .navdiv {
+       flex-direction: column;
+       padding: 1em 0;
+       align-items: center;
+       text-align: center;
+   }
+
+   .nav-list1,
+   .nav-list2 {
+       padding: 0;
+       justify-content: center;
+       flex-direction: column;
+   }
+
+   .navdiv li {
+       margin: 0.5em 0;
+   }
+
+   .wrapper{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "NZ-img"
+    "Amount-Waste"
+    "Source-content"
+    "NZ-Ref"
+    ;
+}
+
+   .nz-img{
+       height: auto;
+   }
+
+   .nz-header{
+       font-size: 2.5em; /* Adjust font size for headings */
+       text-align: center;
+       padding-left: 1.1em;
+   }
+
+   .nz_content-sec1-div{
+       display: none; 
+   }
+
+   .amount-header, .source-rubbish-header{
+       font-size: 2em; /* Adjust font size for headings */
+       text-align: center;
+   }
+   
+   .amount-header-div{
+
+   }
+
+   .amount-content{
+       text-align: center;
+   }
+
+   .amount-content-div{
+    
+   }
+
+   .source-rubbish-header-div{
+   
+   }
+
+   .source-rubbish{
+    
+    padding-bottom: 1em;
+   }
+
+   .source-content{
+    text-align: center;
+   }
+
+   .nz-ref{
+    
+   }
+
+   .pdf{
+    
+   }
+
+   /* Footer */
+   footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the footer content */
+    text-align: center; /* Center text alignment in footer */
+}
+
+.footer-box {
+    text-align: center; /* Centering footer box content */
+}
+
+.ftr-waste-content{
+text-align: center;
+}
+
+.line-ftr,
+.line-ftr2 {
+    display: none;
+}
+
+.ftr-contact-content{
+    font-size: 1.2em;
+    text-align: center;
+    width: 90%;
+}
+
+.ftr-email-btm-div{
+    display: none;
+}
+
+.btm-logo{
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
+}
+
+.ftr-copyright-logo{
+    display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
