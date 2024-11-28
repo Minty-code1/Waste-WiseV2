@@ -956,3 +956,52 @@ input[type="submit"]:hover {
     }
 }
 
+/* ABOUT US PAGE */
+
+.mission-wrapper{
+    background: url('../imagesrc/mountain.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 13.8em;
+}
+
+.mission-header{
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    padding-bottom: .5em;
+}
+
+.mission-content{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+.bakcground-image{
+    width: 100%;
+}
+
+/* REFERENCE PAGE */
+
+.wrapper12{
+    background-color: #000000;
+}
+
+.images{
+    color: white;
+}
+
+.text{
+    padding-top: 1em;
+    color: white;
+}
